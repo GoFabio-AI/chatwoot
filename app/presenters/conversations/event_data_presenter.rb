@@ -17,7 +17,7 @@ class Conversations::EventDataPresenter < SimpleDelegator
       channel: inbox.try(:channel_type),
       contact_inbox: contact_inbox,
       id: display_id,
-      conversation_id: id,
+      conversation_id: id.to_s,
       inbox_id: inbox_id,
       labels: label_list,
       status: status,
